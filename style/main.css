@@ -1,0 +1,104 @@
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*variaveis*/
+:root{
+    --vermelho:rgb(204, 15, 15);
+    --preta:black;
+}
+
+/* Base de tags*/
+body{
+    background-color: var(--preta);
+    font-size: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*Base de classes*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+header .logo{
+    margin-left: 10PX;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 50px;
+}
+header nav a{
+    text-decoration:none;
+    color: #AAA;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: .3s ease all;
+}
+header nav a:hover{
+    color:#fff;
+    background-color: rgb(39, 39, 39);
+    padding: 30px;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 25px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    margin-top: 2%;
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 80%;
+}
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
